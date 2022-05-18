@@ -63,3 +63,10 @@ nav .header-menu {
   height: 95px;
   border-radius: 999rem;
 }
+.secenek {
+  display: flex;
+  position: relative;
+  top: 70px;
+  right: 60px;
+  column-gap: 12px;
+}
