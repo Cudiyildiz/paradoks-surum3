@@ -131,7 +131,7 @@ function showSlide(i) {
 
 grup = document.querySelectorAll("#card");
 grup.forEach(function (item) {
-  item.style.background = "black";
+  item.style.background = "orange";
 });
 
 let doc = document.querySelector("h5");
@@ -141,7 +141,7 @@ let etiket = document.getElementById("etiket");
 etiket.style.color = "black";
 arkaplan = document.querySelectorAll("body");
 arkaplan.forEach(function (item) {
-  item.style.background = "black";
+  item.style.background = "orange";
 });
 ikon = document.getElementById("ikon");
 ikon.style.color = "white";

@@ -1,14 +1,29 @@
 @import url("https://fonts.googleapis.com/css2? family= Mukta:wght@400;700 & family= Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700; 1,200;1,300;1,400;1,500;1,600;1,700;1,800 ve görüntüleme=takas");
 @import url("https://fonts.googleapis.com/css2? aile= Istakoz &family= Mukta:wght@400;700 & display=swap");
+:root {
+  --main-color: orange;
+  --black-color: black;
+  --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+}
+html {
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: 0.2s ease;
 }
 body {
-  background-color: #9fe2e2;
+  background-color: rgba(245, 164, 15, 0.5);
   background-size: cover;
   font-family: "popins", sans-serif;
+  height: 100vh;
 }
 a {
   color: "beige";
@@ -20,14 +35,21 @@ a {
 
 /*Header start*/
 .logo img {
-  border: 2px solid rgb(164, 216, 164);
+  border: 2px solid rgb(238, 241, 238);
   width: 90px;
   height: 90px;
   border-radius: 999rem;
 }
 header {
   height: 100px;
-  border-bottom: 2px solid rgba(241, 240, 235, 0.651);
+  border-bottom: 2px solid rgba(248, 248, 248, 0.6);
+  padding: 0 7%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 7%;
+  border-radius: 30px;
+  box-shadow: 0px 0px 17px -2px rgb(0, 0, 0, 0.75);
 }
 header nav {
   display: flex;
@@ -39,7 +61,7 @@ header nav .logo a {
   text-decoration: none;
   font-size: 25px;
   font-weight: 700;
-  color: rgba(201, 177, 60, 0.651);
+  color: rgba(240, 238, 232, 0.651);
 }
 nav ul {
   list-style: none;
@@ -48,7 +70,7 @@ nav ul {
 }
 nav ul a {
   text-decoration: none;
-  color: rgba(241, 240, 235, 0.651);
+  color: white;
 }
 nav .header-menu {
   display: flex;
@@ -57,9 +79,15 @@ nav .header-menu {
 .menu ul li a {
   text-decoration: none;
   list-style: none;
+  color: #fff;
+  font-size: 1rem;
+  margin: 0 1rem;
 }
 .menu ul li a:hover {
-  color: antiquewhite;
+  border-color: var(--black-color);
+  border-bottom: 0.1rem solid transparent;
+  padding-bottom: 0.5rem;
+  color: var(--black-color);
 }
 /*header end*/
 
@@ -77,8 +105,8 @@ nav .header-menu {
   column-gap: 35px;
   list-style: none;
   position: relative;
-  top: 15px;
-  left: 125px;
+  top: 20px;
+  left: 135px;
   width: 50%;
 }
 .şile img {
@@ -88,9 +116,6 @@ nav .header-menu {
 article .article-list a {
   text-decoration: none;
   color: white;
-  border: 2px solid white;
-  border-radius: 8px;
-  border-width: 1px;
 }
 li img {
   border: 2px solid rgb(164, 216, 164);
@@ -100,39 +125,64 @@ li img {
 }
 /*article end*/
 /*footer start*/
-.iletişim i {
-  height: 120px;
-  width: 120px;
+
+.footer {
+  background-color: var(--black-color);
+  text-align: center;
+  height: 153px;
   position: relative;
-  font-size: 25px;
-  left: 900px;
-  top: 9px;
-  padding: 0 28px;
-  color: rgba(10, 10, 10, 0.925);
+  top: 40px;
 }
-.iletişim {
-  display: flex;
-  background-color: rgba(255, 255, 255, 0.884);
-  position: relative;
-  height: 114px;
-  top: 50px;
+.footer .share {
+  padding: 1rem 0;
+}
+.footer .share a {
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  color: white;
+  font-size: 1rem;
+  border: var(--border);
+  border-radius: 50%;
+  margin: 0.3rem;
+  text-decoration: none;
+}
+.footer .share a:hover {
+  background-color: var(--main-color);
 }
 
-.footer-h3 h3 {
-  position: relative;
-  left: 5px;
-  top: 4px;
+.footer .links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
   font-size: 20px;
-  color: rgb(7, 6, 6);
-  font-family: "popins", sans-serif;
 }
-.logo #logo1 img {
-  border: 2px solid rgb(201, 224, 201);
-  width: 75px;
-  height: 75px;
-  border-radius: 999rem;
-  position: relative;
-  bottom: 1px;
-  left: 20px;
+
+.footer .links a {
+  background-color: var(--black-color);
+  padding: 0.3rem 1rem;
+  color: #fff;
+  font-size: 14px;
+  border: var(--border);
+  text-decoration: none;
+  border-radius: 10px;
 }
+
+.footer .links a:hover {
+  background-color: var(--main-color);
+  opacity: 0.7;
+}
+
+.footer .links a.avtive {
+  background-color: var(--black-color);
+}
+
+.footer .telifhakki {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 300;
+  padding-top: 1.5rem;
+}
+
 /*footer end*/
