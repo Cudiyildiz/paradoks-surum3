@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2? family= Mukta:wght@400;700 & family= Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700; 1,200;1,300;1,400;1,500;1,600;1,700;1,800 ve görüntüleme=takas");
 @import url("https://fonts.googleapis.com/css2? aile= Istakoz &family= Mukta:wght@400;700 & display=swap");
 :root {
-  --main-color: orange;
+  --main-color: #b9ece0;
   --black-color: black;
   --border: 0.1rem solid rgba(255, 255, 255, 0.3);
 }
@@ -20,7 +20,7 @@ html {
   transition: 0.2s ease;
 }
 body {
-  background-color: rgba(245, 164, 15, 0.5);
+  background-color: rgba(140, 211, 193, 0.5);
   background-size: cover;
   font-family: "popins", sans-serif;
   height: 100vh;
@@ -31,6 +31,7 @@ a {
 #conteiner {
   width: 90%;
   margin: auto;
+  background-color: #c7f1effd;
 }
 
 /*Header start*/
@@ -42,7 +43,7 @@ a {
 }
 header {
   height: 100px;
-  border-bottom: 2px solid rgba(248, 248, 248, 0.6);
+  border-bottom: 2px solid #d5f0eafd;
   padding: 0 7%;
   align-items: center;
   display: flex;
@@ -61,7 +62,7 @@ header nav .logo a {
   text-decoration: none;
   font-size: 25px;
   font-weight: 700;
-  color: rgba(240, 238, 232, 0.651);
+  color: rgba(240, 216, 146, 0.384);
 }
 nav ul {
   list-style: none;
@@ -70,7 +71,6 @@ nav ul {
 }
 nav ul a {
   text-decoration: none;
-  color: white;
 }
 nav .header-menu {
   display: flex;
@@ -79,7 +79,7 @@ nav .header-menu {
 .menu ul li a {
   text-decoration: none;
   list-style: none;
-  color: #fff;
+  color: #706e66;
   font-size: 1rem;
   margin: 0 1rem;
 }
@@ -105,7 +105,7 @@ nav .header-menu {
   column-gap: 35px;
   list-style: none;
   position: relative;
-  top: 20px;
+  top: 35px;
   left: 135px;
   width: 50%;
 }
@@ -186,3 +186,15 @@ li img {
 }
 
 /*footer end*/
+.card-link img {
+  border: 1px solid white;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+.card-body {
+  border: 1px solid white;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  position: relative;
+  bottom: 2px;
+}

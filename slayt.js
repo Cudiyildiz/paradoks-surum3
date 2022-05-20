@@ -131,20 +131,20 @@ function showSlide(i) {
 
 grup = document.querySelectorAll("#card");
 grup.forEach(function (item) {
-  item.style.background = "orange";
+  item.style.background = "#c7f1effd";
 });
 
 let doc = document.querySelector("h5");
-doc.style.color = "white";
+doc.style.color = "#706e66";
 
 let etiket = document.getElementById("etiket");
 etiket.style.color = "black";
 arkaplan = document.querySelectorAll("body");
 arkaplan.forEach(function (item) {
-  item.style.background = "orange";
+  item.style.background = "beige";
 });
 ikon = document.getElementById("ikon");
-ikon.style.color = "white";
+ikon.style.color = "#706e66";
 
 ikon2 = document.getElementById("ikon2");
-ikon2.style.color = "white";
+ikon2.style.color = "#706e66";
